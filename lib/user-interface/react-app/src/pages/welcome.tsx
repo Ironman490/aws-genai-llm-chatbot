@@ -33,7 +33,7 @@ export default function Welcome() {
           header={
             <Header
               variant="h1"
-              description="An opensource, modular and comprehensive solution to deploy a multi-model and multi-RAG powered chatbot using AWS CDK on AWS."
+              description="LSEG GenAI Playground to try out various models with RAG capabilities"
               actions={
                 <RouterButton
                   iconAlign="right"
@@ -45,7 +45,7 @@ export default function Welcome() {
                 </RouterButton>
               }
             >
-              Chatbot Home
+              LSEG GenAI Playground Home
             </Header>
           }
         >
