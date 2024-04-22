@@ -49,6 +49,8 @@ export default function Welcome() {
           }
         >
           <SpaceBetween size="l">
+          <SpaceBetween size="l"></SpaceBetween>
+          <SpaceBetween size="l"></SpaceBetween>
           <Header
               variant="h1"
               description="TBD Documentation on usage, check the features readme for starting point"
