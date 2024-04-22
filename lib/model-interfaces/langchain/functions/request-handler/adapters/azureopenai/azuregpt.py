@@ -36,4 +36,4 @@ class AzureGptAdapter(ModelAdapter):
 
 
 # Register the adapter
-registry.register(r"^azure.openai*", AzureGptAdapter)
+registry.register(r"^openai.azure*", AzureGptAdapter)
