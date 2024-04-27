@@ -23,6 +23,8 @@ import RssFeed from "./pages/rag/workspace/rss-feed";
 import WorkspacePane from "./pages/rag/workspace/workspace";
 import Workspaces from "./pages/rag/workspaces/workspaces";
 import Welcome from "./pages/welcome";
+import SelectionScreen from "./pages/selection";
+import ExtractionWorkflow from "./pages/extraction";
 import "./styles/app.scss";
 import SessionPage from "./pages/chatbot/sessions/sessions";
 
@@ -37,7 +39,10 @@ function App() {
         <div style={{ height: "56px", backgroundColor: "#000716" }}>&nbsp;</div>
         <div>
           <Routes>
-            <Route index path="/" element={<Welcome />} />
+            <Route index path="/" element={<SelectionScreen />} />
+            <Route path="/welcome" element={<Welcome />} />
+            <Route path="/extraction-workflow" element={<ExtractionWorkflow />} />
+            {/* <Route index path="/" element={<Welcome />} /> */}
             <Route path="/chatbot" element={<Outlet />}>
               <Route path="playground" element={<Playground />} />
               <Route path="playground/:sessionId" element={<Playground />} />
