@@ -1,14 +1,24 @@
 import { useNavigate } from 'react-router-dom';
+import { Button, Container, Box, Header } from '@cloudscape-design/components';
 
 const SelectionScreen = () => {
   const navigate = useNavigate();
-  
+
   return (
-    <div>
-      <button onClick={() => navigate('/welcome')}>Go to Welcome</button>
-      <button onClick={() => navigate('/extraction-workflow')}>Go to Extraction Workflow</button>
-    </div>
+    <Container>
+      <Header variant="h1">Select Your Path</Header>
+      <Box padding="l">
+          <Button onClick={() => navigate('/welcome')}>
+            Welcome Page
+          </Button>
+          <Button onClick={() => navigate('/extraction-workflow')}>
+            Extraction Workflow
+          </Button>
+      </Box>
+    </Container>
   );
 };
 
 export default SelectionScreen;
+
+
